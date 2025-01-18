@@ -1,12 +1,13 @@
-import bisect
+        import bisect
 
 class Solution(object):
     def jobScheduling(self, startTime, endTime, profit):
-
-        empregos = [(startTime[i], endTime[i], profit[i]) for i in range(len(startTime))]
+        
+        empregos = [(startTime[i], endTime[i], profit[i]) for i in range(len(startTime))] #jobs ordenados por fim
         empregos.sort(key=lambda x: x[1])
 
         fins_ordenados = [emp[1] for emp in empregos]
+
         dp = [0] * (len(empregos) + 1)
 
         for i in range(1, len(empregos) + 1):
@@ -14,11 +15,9 @@ class Solution(object):
 
             j = bisect.bisect_right(fins_ordenados, inicio)
 
-            lucro_incluindo = lucro_atual + dp[j + 1]
+            lucro_incluindo = lucro_atual + dp[j]
             lucro_nao_incluindo = dp[i - 1]
 
             dp[i] = max(lucro_incluindo, lucro_nao_incluindo)
-
-        print("Debug - dp final:", dp)
+        print("Debug 2 - dp final:", dp)
         return dp[-1]
-
