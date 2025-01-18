@@ -17,11 +17,18 @@ Meu projeto foi resolução de problemas do LeetCode.
 
 ## Screenshots do Projeto em Funcionamento
 
+## Desafios
+| NOME  | DIFICULDADE |
+| ---------- | ------------------------------ |
+|[maximum profit in jobs scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)| HARD|
+|||
+|||
+
 Aqui estão algumas imagens do projeto em funcionamento:
 
-#### Desafio 1 [3193. Count the Number of Inversions(HARD)](https://leetcode.com/problems/count-the-number-of-inversions/)
+#### Desafio 1 [1235. Maximum Profit in Job Scheduling(HARD)](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
 
-![Screenshot Desafio 1](./assets/CountInversionsPassed.png)
+![Screenshot Desafio 1](./assets/maximum-profit-jobs-passed.png)
 
 
 ## Modo de uso
