@@ -1,7 +1,7 @@
 class Solution(object):
     def __init__(self):
         pass
-    
+
     def empurrar(self, heap, elemento):
         heap.append(elemento)
         self.subirElemento(heap, len(heap) - 1)
@@ -36,31 +36,40 @@ class Solution(object):
             self.descerElemento(heap, menor)
 
     def assignTasks(self, servidores, tarefas):
+
         servidores_livres = []
+        servidores_ocupados = []
+
+
         for i, peso in enumerate(servidores):
             self.empurrar(servidores_livres, (peso, i))
         
-        servidores_ocupados = []
-        
         resposta = [0] * len(tarefas)
+        tempo_atual = 0
+        
+        for i, tempo_tarefa in enumerate(tarefas):
 
-        for tempo_atual, tempo_tarefa in enumerate(tarefas):
-            # Limpa servidores livres
+            tempo_atual = max(tempo_atual, i)
+
             while servidores_ocupados and servidores_ocupados[0][0] <= tempo_atual:
                 fim_livre, peso_srv, idx_srv = self.retirar(servidores_ocupados)
                 self.empurrar(servidores_livres, (peso_srv, idx_srv))
             
             if not servidores_livres:
                 fim_livre, peso_srv, idx_srv = self.retirar(servidores_ocupados)
+                tempo_atual = fim_livre  
 
-                resposta[tempo_atual] = idx_srv
+                while servidores_ocupados and servidores_ocupados[0][0] <= tempo_atual:
+                    fim_livre2, peso_srv2, idx_srv2 = self.retirar(servidores_ocupados)
+                    self.empurrar(servidores_livres, (peso_srv2, idx_srv2))
+                
+                resposta[i] = idx_srv
                 novo_fim = tempo_atual + tempo_tarefa
                 self.empurrar(servidores_ocupados, (novo_fim, peso_srv, idx_srv))
             else:
-                # Se há servidor livre
                 peso_srv, idx_srv = self.retirar(servidores_livres)
-                resposta[tempo_atual] = idx_srv
+                resposta[i] = idx_srv
                 novo_fim = tempo_atual + tempo_tarefa
                 self.empurrar(servidores_ocupados, (novo_fim, peso_srv, idx_srv))
-
+        
         return resposta
