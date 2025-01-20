@@ -1,6 +1,6 @@
-﻿# DividirConquistar_Desafios_LeetCode
+﻿# Greed_DesafiosLeetcode
 
-**Conteúdo da Disciplina**: Dividir e Conquistar<br>
+**Conteúdo da Disciplina**: Algoritmos Ambiciosos<br>
 
 ## Alunos
 
@@ -23,8 +23,7 @@ Meu projeto foi resolução de problemas do LeetCode.
 | NOME                                                                                                             | DIFICULDADE |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [maximum profit in jobs scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) | HARD        |
-|                                                                                                                  |             |
-|                                                                                                                  |             |
+| [maximum number of tasks you can assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/)  | HARD        |
 
 Aqui estão algumas imagens do projeto em funcionamento:
 
@@ -34,7 +33,7 @@ Aqui estão algumas imagens do projeto em funcionamento:
 
 #### Desafio 2 [2071. Maximum Number of Tasks You Can Assign (HARD)](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/)
 
-![Screenshot Desafio 1](./assets/maximum-number-tasks-passed.jpeg)
+![Screenshot Desafio 2](./assets/maximum-number-tasks-passed.jpeg)
 
 ## Modo de uso
 
