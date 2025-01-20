@@ -4,25 +4,27 @@
 
 ## Alunos
 
-| Matrícula  | Aluno                          |
-| ---------- | ------------------------------ |
-| 21/1030809 | JULIO CESAR ALMEIDA DOURADO    |
+| Matrícula  | Aluno                       |
+| ---------- | --------------------------- |
+| 21/1030809 | JULIO CESAR ALMEIDA DOURADO |
 
 ## Sobre
 
 Meu projeto foi resolução de problemas do LeetCode.
 
 ## Link de apresentação no Youtube
-[Clique aqui]() 
+
+[Clique aqui]()
 
 ## Screenshots do Projeto em Funcionamento
 
 ## Desafios
-| NOME  | DIFICULDADE |
-| ---------- | ------------------------------ |
-|[maximum profit in jobs scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)| HARD|
-|||
-|||
+
+| NOME                                                                                                             | DIFICULDADE |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [maximum profit in jobs scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) | HARD        |
+|                                                                                                                  |             |
+|                                                                                                                  |             |
 
 Aqui estão algumas imagens do projeto em funcionamento:
 
@@ -30,6 +32,9 @@ Aqui estão algumas imagens do projeto em funcionamento:
 
 ![Screenshot Desafio 1](./assets/maximum-profit-jobs-passed.png)
 
+#### Desafio 2 [2071. Maximum Number of Tasks You Can Assign (HARD)](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/)
+
+![Screenshot Desafio 1](./assets/maximum-number-tasks-passed.jpeg)
 
 ## Modo de uso
 

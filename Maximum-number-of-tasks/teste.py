@@ -1,10 +1,12 @@
 class Solution(object):
     def maxTaskAssign(self, tarefas, trabalhadores, pilulas, forca_extra):
-
         tarefas.sort()
         trabalhadores.sort()
         
         def pode_atribuir(k):
+            if k == 0:
+                return True
+            
             indice_tarefa = k - 1
             indice_trabalhador = len(trabalhadores) - 1
             pilulas_restantes = pilulas
